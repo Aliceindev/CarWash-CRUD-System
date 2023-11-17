@@ -23,7 +23,7 @@
             try {
                 Connection conecta;
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                conecta = DriverManager.getConnection("jdbc:mysql://localhost:3306/bd_carro", "root", "5873");
+                conecta = DriverManager.getConnection("jdbc:mysql://localhost:3306/bd_carro", "root", "");
 
                 PreparedStatement st;
                 st = conecta.prepareStatement("DELETE FROM veiculo WHERE id=?");

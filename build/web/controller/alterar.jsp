@@ -32,7 +32,7 @@
                         Connection conecta;
                         PreparedStatement st;
                         Class.forName("com.mysql.cj.jdbc.Driver"); //Faz a conexao entre o driver e o java
-                        conecta = DriverManager.getConnection("jdbc:mysql://localhost:3306/bd_carro", "root", "5873");
+                        conecta = DriverManager.getConnection("jdbc:mysql://localhost:3306/bd_carro", "root", "");
 
                         st = conecta.prepareStatement("SELECT * FROM veiculo WHERE id = ?");
                         st.setInt(1, id);

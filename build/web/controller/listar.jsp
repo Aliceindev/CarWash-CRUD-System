@@ -16,7 +16,7 @@
         <div class="menu">
             <img src="../assets/img/logo.png" alt="">
             <div class="nav">
-                <a class="nav-link"  href="index.html">Home</a>
+                <a class="nav-link"  href="../index.html">Home</a>
                 <a class="nav-link" href="../view/cadastro.html">Cadastre-se</a>
                 <a class="nav-link">Listagem</a>
                 <a class="nav-link" href="../view/consultar.html">Consultar</a>
@@ -29,7 +29,7 @@
                         Connection conecta;
                         PreparedStatement st;
                         Class.forName("com.mysql.cj.jdbc.Driver"); //Faz a conexao entre o driver e o java
-                        conecta = DriverManager.getConnection("jdbc:mysql://localhost:3306/bd_carro", "root", "5873");
+                        conecta = DriverManager.getConnection("jdbc:mysql://localhost:3306/bd_carro", "root", "");
 
                         st = conecta.prepareStatement("SELECT * FROM veiculo");
                         ResultSet rs = st.executeQuery();
