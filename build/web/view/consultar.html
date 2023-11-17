@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consultar Page</title>
+        <link rel="stylesheet" href="../style/sucess.css">
+    </head>
+    <body>
+        <div class="menu">
+            <img src="../assets/img/logo.png" alt="">
+            <div class="nav">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+                <a class="nav-link" href="../controller/listar.jsp">Listagem</a>
+                <a class="nav-link">Consultar</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="content-con">
+                <h1 class="tittle">Consultar <a class="letter-color">Dados</a></h1>
+                <p>Digite o nome do proprietário do carro que deseja buscar no banco</p>
+                <form method="get" action="../controller/consultar_bd.jsp">
+                    <label for="proprietario">Nome do proprietário:</label>
+                    <input type="text" id="proprietario" name="proprietario" class="input-text" maxlength="50" required>
+                    <input type="submit" class="input-submit" value="Consultar">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

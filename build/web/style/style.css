@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*//////////////////////////
+//                        //
+//      DIVs - MAINs      //  
+//                        //
+//////////////////////////*/
+
+
+.main{
+    display: flex;
+}
+
+.submain{
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70vw;
+    height: 100vh;
+}
+.sub2main{
+    background-color: #8E0F16;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 40vw;
+}
+
+
+
+/*//////////////////////////
+//                        //
+//          MENU          //  
+//                        //
+//////////////////////////*/
+
+
+.menu{
+    padding-top: 1.5vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link{
+    margin-left: 4.5vw;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: rgb(204, 204, 204);
+}
+
+
+
+/*//////////////////////////
+//                        //
+//      TEXTS - LEFT      //  
+//                        //
+//////////////////////////*/
+
+
+.text{
+    height: 100vh;
+    align-items: flex-start;
+    display: flex;
+    width: 52vw;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tittle{
+    margin-top: 5vh;
+    font-weight: 600;
+    font-size: 4vw;
+    width: 40vw;
+    letter-spacing: 0.5rem;
+}
+
+.letter-color{
+    color: #8E0F16;
+}
+
+.redes{
+    margin-top: 5vh;
+}
+
+p{
+    margin-top: 3vh;
+    width: 40vw;
+    font-weight: 400;
+    color: #373534;
+    letter-spacing: 0.1rem;
+}
+
+.button-link{
+    margin-top: 5vh;
+    background-color: #8E0F16;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    width: 15vw;
+    height: 7vh;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-link:hover{
+    background-color: white;
+    color: #8E0F16;
+    border: 3px;
+    border: solid 1px #8E0F16;
+    letter-spacing: 0.2rem;
+    transition: 0.5s;
+}
+
+
+
+/*//////////////////////////
+//                        //
+//         FORM           //  
+//                        //
+//////////////////////////*/
+
+
+.form-fundo{
+    margin-top: 12vh;
+    margin-right: 10vw;
+    background-color: #8E0F16;
+    height: 75vh;
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+form .form-control {
+    height: 7vh;
+    position: relative;
+    margin-left: 3vw;
+    margin-top: 4vh;
+    margin-bottom: -2vh;
+}
+
+.form-input {
+    height: 7vh;
+    width: 80%;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #373534;
+    font-size: 0.8rem;
+    padding: 0 20px;
+}
+  
+.form-input:is(:focus, :valid) {
+    background: rgb(235, 235, 235);
+    padding: 5px 20px 0;
+}
+  
+.form-control label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1vw;
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+  
+.form-control input:is(:focus, :valid) ~ label {
+    font-size: 0.80rem;
+    transform: translateY(-130%);
+}
+
+.button-conf{
+    background-color: #8E0F16;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    width: 91%;
+    height: 7vh;
+    border: solid 1px white;
+    border-radius: 8px;
+}
+
+.button-conf:hover{
+    transition: 0.5s;
+    color: #8c8c8c;
+    border: solid 1px #8c8c8c;
+    letter-spacing: 0.3rem;
+}
+
+
+
+/*//////////////////////////
+//                        //
+//     F0RM - ALTERAR     //  
+//                        //
+//////////////////////////*/
+
+
+.form-fundo-alt{
+    margin-top: 12vh;
+    margin-right: 10vw;
+    background-color: #8E0F16;
+    height: 83vh;
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+form .form-control-only{
+    height: 7vh;
+    position: relative;
+    margin-left: 3vw;
+    margin-top: 4vh;
+    margin-bottom: -2vh;
+}
+
+.form-control-only label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-130%);
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+    font-size: 0.80rem;
+}
+
+.form-input-only{
+    height: 7vh;
+    width: 80%;
+    background: rgb(235, 235, 235);
+    padding: 5px 20px 0;
+    outline: none;
+    border-radius: 4px;
+    color: #373534;
+    font-size: 0.8rem;
+}
+  
+
+
+/*//////////////////////////
+//                        //
+//         IMAGES         //  
+//                        //
+//////////////////////////*/
+
+
+.carro-img{
+    position: fixed;
+    left: 40vw;
+    width: 80vw;
+    height: 100vh;
+}
+
+.cad-img{
+    padding-left: 40px;
+    padding-top: 20px;
+    width: 17vw;
+    height: 12vh;
+}
+
+
+
+/*//////////////////////////
+//                        //
+//  RESPONSIVIDADE - CAD  //  
+//                        //
+//////////////////////////*/
+
+/* 
+@media (max-width: 2560px){
+
+    .nav-link{
+        font-size: 1vw;
+    }
+
+    .button-conf{
+        width: 86%;
+        font-size: 0.7vw;
+    }
+
+    .form-control label {
+        font-size: 0.7vw;
+    }
+
+    .form-control input {
+        font-size: 0.6vw;
+    }
+
+    .carro-img{
+        width: 60vw;
+        height: 90vh;
+        position: fixed;
+        left: 50vw;
+    }
+
+    .cad-img{
+        padding-left: 75px;
+        width: 12vw;
+        height: 10vh;
+    }
+}
+
+@media(max-width: 1440px){
+    .button-conf{
+        width: 91%;
+        font-size: 1.2vw;
+    }
+
+    .cad-img{
+        padding-left: 45px;
+        width: 12vw;
+        height: 10vh;
+    }
+
+
+} */
+
+@media (max-width: 1024px){
+    .button-conf{
+        width: 92%;
+        font-size: 1.2vw;
+    }
+
+    .form-fundo{
+        width: 35vw;
+    }
+
+    .form-control label {
+        font-size: 1.2vw;
+    }
+
+    .form-control input {
+        font-size: 1.4vw;
+    }
+
+    .carro-img{
+        width: 80vw;
+        height: 90vh;
+    }
+
+    .cad-img{
+        width: 20vw;
+        height: 11vh;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .logo-img{
+        width: 20vw;
+        height: 10vh;
+    }
+
+    .nav-link{
+        margin-left: 4vw;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 1.3vw;
+    }
+    
+    .button-conf{
+        width: 92%;
+        font-size: 1.2vw;
+    }
+
+    .form-fundo{
+        width: 35vw;
+    }
+
+    .form-control input {
+        height: 7vh;
+        width: 75%;
+    }
+
+    .form-control label {
+        font-size: 1.2vw;
+    }
+
+    .form-control input {
+        font-size: 1.3vw;
+    }
+
+    .form-control input:is(:focus, :valid) ~ label {
+        font-size: 0.6rem;
+    }
+
+    .carro-img{
+        width: 80vw;
+        height: 90vh;
+    }
+
+    .cad-img{
+        padding-left: 30px;
+        width: 20vw;
+        height: 11vh;
+    }
+}
+
+@media (max-width: 425px){
+
+    .main{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .submain{
+        background-color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 70vw;
+        height: 100vh;
+    }
+    .sub2main{
+        display: none;
+    }
+
+    .nav-link{
+        margin-left: 4vw;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 2vw;
+        color: #8E0F16;
+    }
+    
+    .button-conf{
+        width: 91%;
+        font-size: 2vw;
+    }
+
+    .form-fundo{
+        width: 65vw;
+        margin-right: 1vw;
+    }
+
+    .form-control input {
+        height: 7vh;
+        width: 75%;
+        font-size: 2.5vw;
+    }
+
+    .form-control label {
+        font-size: 2vw;
+    }
+
+    .form-control{
+        padding-left: 2vw;
+    }
+
+    .form-control input:is(:focus, :valid) ~ label {
+        font-size: 0.6rem;
+    }
+
+    .logo-img{
+        width: 17vw;
+        height: 7vh;
+    }
+
+    .cad-img{
+        padding-left: 30px;
+        width: 35vw;
+        height: 10vh;
+    }
+}
+
+@media (max-width: 375px){
+
+    .nav-link{
+        font-size: 2vw;
+    }
+
+    .button-conf{
+        width: 93%;
+        font-size: 2vw;
+    }
+
+    .logo-img{
+        width: 20vw;
+        height: 7vh;
+    }
+
+    .cad-img{
+        padding-left: 25px;
+        width: 40vw;
+        height: 10vh;
+    }
+}

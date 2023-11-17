@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro [ERRO]</title>
+        <link rel="stylesheet" href="../style/sucess.css">
+    </head>
+    <body>
+        <div class="menu">
+            <img src="../assets/img/logo.png" alt="">
+            <div class="nav">
+                <a class="nav-link"  href="../index.html">Home</a>
+                <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+                <a class="nav-link" href="../controller/listar.jsp.html">Listagem</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="content-main">
+                <h1 class="tittle">Cadastro[ERRO] <a class="letter-color">Dados</a> já<a class="letter-color"> Existem</a></h1>
+                <p>Houve algum erro ao tentar se cadastrar verifique-os os seus dados. Número da placa já foi cadastrado</p>
+                <p>Redirecionando para a página de cadastro em <span id="contador">3</span> segundos...</p>
+                <div class="redes">
+                    <img src="../assets/img/insta.png" alt="">
+                    <img src="../assets/img/face.png" alt="">
+                    <img src="../assets/img/tiktok.png" alt="">
+                    <img src="../assets/img/whats.png" alt="">
+                </div>
+            </div>
+        </div>
+        <script>
+            function atualizarContador() {
+                const contadorElement = document.getElementById("contador");
+                let segundos = 8;
+
+                const contadorInterval = setInterval(function () {
+                    segundos--;
+
+                    if (segundos <= 0) {
+                        clearInterval(contadorInterval);
+                        window.location.href = "cadastro.html";
+                    } else {
+                        contadorElement.textContent = segundos;
+                    }
+                }, 1000); // 1000 milissegundos = 1 segundo
+            }
+
+            window.addEventListener("load", atualizarContador);
+        </script>
+    </body>
+</html>
